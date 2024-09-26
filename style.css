@@ -1,0 +1,96 @@
+:root {
+    --background: #1a1a2e;
+    --color: #ffffff;
+    --primary-color: #0f3460;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--background);
+    color: var(--color);
+    letter-spacing: 1px;
+    transition: background 0.2s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    position: relative;
+    width: 22.2rem;
+}
+
+.form-container {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+}
+
+form input {
+    display: block;
+    padding: 14.5px;
+    width: 100%;
+    margin: 2rem 0;
+    color: var(--color);
+    background-color: #9191911f;
+    border-radius: 5px;
+    border: none;
+    backdrop-filter: blur(15px);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: var(--color);
+    padding: 13px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.circle {
+    width: 8rem;
+    height: 8rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle-one {
+    top: 0;
+    left: 0;
+    transform: translate(-45%, -45%);
+}
+
+.circle-two {
+    bottom: 0;
+    right: 0;
+    transform: translate(45%, 45%);
+}
+
+.illustration {
+    width: 90%;
+    position: absolute;
+    top: -14%;
+    right: -2px;
+}
+
+.register-forget {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opacity {
+    opacity: 0.6;
+}
